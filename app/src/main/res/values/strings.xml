@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">In debt</string>
+
+    <string name="debt_list">အကြွေးစာရင်း</string>
+
+    <string name="phone">ဖုန်းနံပါတ်</string>
+    <string name="forgot_password">Password မေ့နေပြီလား?</string>
+    <string name="password">Password</string>
+</resources>

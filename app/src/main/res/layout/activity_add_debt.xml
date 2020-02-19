@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="နာမည်"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edt_userName_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_name"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/phone"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edt_phone_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_phone"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="လိပ်စာ"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edt_address_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_nrc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_address"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="မှတ်ပုံတင်နံပါတ်"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edt_nrc_no_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_nrc"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="အမျိုးအစား"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <Spinner
+                        android:id="@+id/sp_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_4"
+                        android:layout_weight="2" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_category"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="အတိုး"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_interest_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_open_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_interest"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ချေးငွေ"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edt_open_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_open_balance"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="အပေါင်ပစ္စည်း"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edt_agreement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_4" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_dead_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_agreement"
+                android:layout_margin="@dimen/margin_4"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="အပေါင်ဆုံးနေ့"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_deadline_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/margin_8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_below="@id/ll_dead_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_22"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_marginLeft="@dimen/margin_22"
+                    android:textColor="@color/colorWhite"
+                    android:text="မလုပ်တော့ပါ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary" />
+                <Button
+                    android:layout_marginLeft="@dimen/margin_22"
+                    android:id="@+id/btn_save_debt"
+                    android:text="သိမ်းမည်"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
